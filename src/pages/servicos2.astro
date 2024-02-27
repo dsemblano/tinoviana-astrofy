@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Serviços" sideBarActiveItemID="servicos2">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Produtos & Serviços</div>
+  </div>
+
+  <div class="py-2">
+    <text class="text-lg">
+      Atuamos com treinamentos e desenvolvimento, palestras, coaching, mentoria, tradução, intérprete consecutivo, cursos de conversação inglês e francês, teatro-empresa, peças de teatro.
+    </text>
+
+  <HorizontalCard
+    title="Temas trabalhados"
+    img="/post_img.webp"
+    desc="Liderança, Equipes, Integração, Comunicação, Autorresponsabilização, Gestão da Mudança, Motivação, entre outros."
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Diferencial"
+    img="/post_img.webp"
+    desc="Nosso diferencial está no desenvolvimento prático dos temas abordados nos treinamentos, assim como em coaching e mentoria."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Lideração: a liderança na prática"
+    img="/post_img.webp"
+    desc="Programa de liderança que compreende duas fases em quatro módulos cada. Os principais temas abordados são Autoconhecimento, Liderança, Equipes e Gestão. Em parceria com Marcelo Karam Desenvolvimento Humano, os encontros têm intervalos de uma a duas semanas, quando os participantes terão oportunidade de colocar em prática os conteúdos abordados em sala para debate no módulo seguinte."
+    url="#"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+  </div>
+
+  <HorizontalCard
+    title="Demo Project 3"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+    badge="FOSS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 4"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 5"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+  />
+</BaseLayout>

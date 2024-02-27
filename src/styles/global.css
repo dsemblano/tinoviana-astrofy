@@ -1,3 +1,37 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+/* .css-after-gradiant {
+    position: relative;
+}
+
+.css-after-gradiant img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.css-after-gradiant::after {
+    content: "";
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,
+            rgba(255, 87, 34, 1) 0%,
+            rgba(205, 220, 57, 1) 100%,
+            rgba(0, 212, 255, 1) 100%);
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+} */
+
+.imgprofile {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+}
+
+h1 {
+    background-color: red;
+}
