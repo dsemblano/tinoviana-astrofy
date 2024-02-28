@@ -29,3 +29,9 @@
     left: -5px;
     z-index: -1;
 } */
+
+article.prose {
+    img {
+        @apply rounded-md;
+    }
+}
