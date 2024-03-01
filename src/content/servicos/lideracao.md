@@ -2,7 +2,7 @@
 title: "Lideração"
 description: "Programa de liderança que compreende duas fases em quatro módulos cada. Os principais temas abordados são Autoconhecimento, Liderança, Equipes e Gestão. Em parceria com Marcelo Karam Desenvolvimento Humano, os encontros têm intervalos de uma a duas semanas, quando os participantes terão oportunidade de colocar em prática os conteúdos abordados em sala para debate no módulo seguinte."
 pubDate: "Feb 27 2024"
-heroImage: "/post_img.webp"
+# heroImage: "/post_img.webp"
 tags: ["lideracao"]
 ---
 
