@@ -1,0 +1,14 @@
+---
+// Dynamic slug
+const { slug } = Astro.request.params;
+const image = findImageBySlug(slug); // Implement this function to find the image data
+---
+<html>
+  <head>
+    <title>{image.title}</title>
+  </head>
+  <body>
+    <img src={image.src} alt={image.title} />
+    <p>{image.description}</p>
+  </body>
+</html>

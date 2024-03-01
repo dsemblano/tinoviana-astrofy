@@ -1,0 +1,10 @@
+---
+// Props passed to the component
+export let src = '';
+export let alt = '';
+---
+<div class="image-container">
+  <a href={`/image/${encodeURIComponent(alt)}`}>
+    <img src={src} alt={alt} />
+  </a>
+</div>

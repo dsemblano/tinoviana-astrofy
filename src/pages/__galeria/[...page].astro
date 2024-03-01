@@ -1,0 +1,32 @@
+---
+// Import components and any necessary data here
+import ImageComponent from '../../components/ImageComponent.astro';
+// Assuming you have an array of images
+const images = [{ src: 'path/to/image1.jpg', alt: 'Image 1' }, ...];
+---
+<html>
+  <head>
+    <title>Fotos Galeria</title>
+  </head>
+  <body>
+    <div class="gallery">
+      {images.map((image) => (
+        <ImageComponent src={image.src} alt={image.alt} />
+      ))}
+    </div>
+  </body>
+</html>
+
+<style>
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-container {
+  margin: 10px;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+</style>
