@@ -37,3 +37,18 @@ const { title, description, image = '/social_img.webp', ogType = 'website' } = A
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=GTM-W39KFG6M"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GTM-W39KFG6M');
+</script>
+
+<script>
+	partytown = {
+	  forward: ['dataLayer.push']
+	};
+  </script>
