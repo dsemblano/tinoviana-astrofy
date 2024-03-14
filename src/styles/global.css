@@ -30,6 +30,11 @@
     z-index: -1;
 } */
 
+h1,
+h2 {
+    @apply text-gold;
+}
+
 article.prose img {
     @apply rounded-md;
 }
