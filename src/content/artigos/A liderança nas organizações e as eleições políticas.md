@@ -2,7 +2,7 @@
 title: "A liderança nas organizações e as eleições políticas"
 description: "Toda a polarização política no Brasil pode ter consequências negativas nas empresas, do Recrutamento e Seleção às lideranças."
 pubDate: "Mar 12 2024"
-heroImage: "/assertividade.webp"
+heroImage: "/artigos/lideranca.webp"
 tags: ["lideranca", "eleicoes"]
 ---
 Toda a polarização política no Brasil pode ter consequências negativas nas empresas, do Recrutamento e Seleção às lideranças. Mesmo que seja um desejo evitar-se falar de política, não é o que acontece, e manifestar-se a favor de um ou outro candidato pode exacerbar preconceitos para a execução de tarefas, resultados, competência e espírito de equipe dos colaboradores.  Num período de efervescência política, alguns podem manifestar-se de modo militante, incomodando os de pensamentos contrários, o que pode influenciar bastante no clima da organização. “Se você não apoia o meu candidato, você não é um bom profissional, sua visão de mundo não é a real.”  A tendência política para a esquerda ou para a direita pode definir a percepção de trabalho, benefícios, direitos, deveres e liderança, entre outros aspectos. A percepção de justiça não é a mesma para os dois lados e a empresa pode acabar sendo palco de uma disputa que fará todos saírem perdendo, inclusive a imagem da organização.   
