@@ -1,0 +1,24 @@
+---
+title: "Futebol e Liderança"
+description: "Então como acontece de um time ter um resultado melhor quando muda o técnico e não os jogadores?"
+pubDate: "Mar 15 2024"
+heroImage: "/artigos/futebol e lideranca.png"
+tags: ["futebol", "liderança"]
+---
+Não jogo futebol, sempre fui péssimo e desisti, e nem tinha muito interesse, mas assisto bastante, gosto de estádio, apesar de não ir muito, vejo bastante na tv, torço muito e até acho que sei bem as regras, do que pode e não pode, porque presto atenção nos comentaristas.
+
+No futebol, quanto melhor se exerce a função e se surpreende a torcida, maior valor de mercado, mas vai ser maior ainda se o resultado for ótimo. Aí entra a competência com a pressão de uma posição, de um gol, de aparecer na mídia, de melhorar tecnicamente, de ser o melhor jogador da partida, espírito de equipe, a competição consigo mesmo e por aí vai.
+
+Num ambiente de trabalho, não é muito diferente. Todos querem ser reconhecidos, promovidos, enriquecer etc. Não gosta de trabalhar com todo mundo, como alguns jogadores, dá-se muito bem com outros, às vezes com dois no ataque com bons gols, quando a equipe funciona bem. O placar são as metas atingidas e a comemoração tem que acontecer. Se não aconteceu, o que temos que treinar mais, chutes a gol? De bola parada?
+
+Os resultados financeiros também são melhores. Nem todos os jogadores ganham milhões de euros, muitos se viram com uns R$ 5.000,00 no mês, quando não menos.  Mas é verdade que é uma carreira promissora e aí vem a competência e a maneira como enfrenta os desafios e os relacionamentos pra fazer boas jogadas e chegar aos gols, essa é a meta. Todos têm que funcionar bem, pra um passar a bola pro outro que tem mais espaço pra trabalhar até chegar no gol.
+
+Fora do futebol, as carreiras podem trazer sucesso financeiro, como às vezes apenas existencial, mas sem enriquecer. Tem de tudo, de todas as classes de trabalhadores até ricos, de todas as receitas.
+
+Então como acontece de um time ter um resultado melhor quando muda o técnico e não os jogadores?
+
+O novo estimula? Não pode mudar e esbarra em elenco que precisa de reforço competente, mas não recebe e tem que dar um jeito com o que tem, entendendo como um desafio? O novo técnico traz uma nova maneira de conseguir resultados, quais movimentos, ensaio de jogadas, treino de pontaria, treino técnico de todo tipo pra melhorar a qualidade total.
+
+Mas por que depois de um tempo esse resultado tende a cair? Aí é o mesmo técnico e o mesmo grupo... Esfria? Acaba a novidade? O técnico não se atualiza? Problemas de relacionamento? O que esse gestor não está conseguindo fazer mais?
+
+As demandas de segurança, desenvolvimento, crescimento da força de trabalho são cada vez maiores e os gestores precisam se atualizar e pesquisar bem isso. Dar oportunidade a todos conforme o nível de competência e de defasagem a aprender e se desenvolver junto com a equipe. Tem que ser tipo “brother”, todo mundo nessa “vibe”, como diz a galera. Comunicação aberta, projetos em equipe, interdisciplinaridade, transversalidade, todos se entendendo, se complementando. O que precisa, um futebol com todo mundo, homens, mulheres e o que mais, churrasco, festas... Legal quando esse ambiente de amigo de bar é do tipo “que bom que você tá por aqui, véi”. Aí é só conhecer melhor, o que gosta, o que não gosta, o que quer da vida, o que pode ter e ser.

@@ -17,6 +17,8 @@
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.1",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^7.3.6",
+    "@sendgrid/mail": "^8.1.1",
     "animate.css": "^4.1.1",
     "astro": "^4.4.15",
     "daisyui": "^4.4.10",
