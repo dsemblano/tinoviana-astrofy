@@ -2,6 +2,6 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Tino Viana | Consultoria, Produções & Artes Cênicas';
-export const SITE_DESCRIPTION = 'Metodologia construtivista para empresas. Palestras, coaching, mentoria, cursos de conversação (inglês e francês), artes cênicas e muito mais!';
+export const SITE_DESCRIPTION = 'Metodologia construtivista para empresas. Palestras, coaching, mentoria, conversação inglês e francês, artes cênicas e muito mais!';
 export const GENERATE_SLUG_FROM_TITLE = true
 export const TRANSITION_API = true
