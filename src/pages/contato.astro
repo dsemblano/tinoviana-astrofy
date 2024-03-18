@@ -1,38 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-
-import sendGrid from '@sendgrid/mail';
-sendGrid.setApiKey( import.meta.env.SENDGRID_API_KEY );
-
-if (Astro.request.method === 'POST') {
-  try{
-    // Getting posted data from our contact form
-    const data = await Astro.request.formData();
-    const name = data.get('name');
-    const email = data.get('email');
-    const message = data.get('message');
-
-    // TODO: Do not forget to do validation and error handling over received data from your contact form.
-
-    // Sending email
-    const msg = {
-      to: 'dsemblano@gmail.com', // Change to your recipient
-      from: 'tinoviana@tinoviana.com.br', // Change to your verified sender
-      replyTo: {email:email, name:name},
-      subject: `Contact form submission from ${name}`,
-      text: message,
-    }
-    await sendGrid.send(msg).then(() => {
-      console.log('Email sent')
-    }).catch((error) => {
-      console.error(error)
-    });
-
-  } catch (error) {
-    console.error(error);
-  }
-}
 ---
 
 <BaseLayout title = "Livros" sideBarActiveItemID="livros">
@@ -51,21 +19,4 @@ if (Astro.request.method === 'POST') {
         </a>
       </p>
       <a href="tel:5541-98419-3457">(+55 41) 98419-3457</a> 
-
-      Form
-      <form method="POST">
-        <div>
-          <input type="text" name="name" placeholder="Nome" />
-        </div>
-        <div>
-          <input type="email" name="email" placeholder="Email" />
-        </div>
-        <div>
-          <textarea name="message" placeholder="Mensagem"></textarea>
-        </div>
-        <div>
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
-
     </text>
