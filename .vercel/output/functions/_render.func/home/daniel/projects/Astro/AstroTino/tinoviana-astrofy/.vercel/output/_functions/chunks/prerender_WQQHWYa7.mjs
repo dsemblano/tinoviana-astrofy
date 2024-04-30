@@ -9,7 +9,6 @@ export const f = noop;
 export const g = noop;
 export const h = noop;
 export const i = noop;
-export const j = noop;
 export const l = noop;
 export const p = noop;
 export const r = noop;

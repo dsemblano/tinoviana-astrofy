@@ -1,7 +1,11 @@
-import { A as AstroError, c as InvalidImageService, d as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, e as createAstro, f as createComponent, g as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, h as addAttribute, s as spreadAttributes } from '../astro_D2Aa9jdi.mjs';
-import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS, c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_D_5fbzzE.mjs';
+/* empty css                           */
+import { A as AstroError, c as InvalidImageService, d as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, e as createAstro, f as createComponent, g as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, h as addAttribute, s as spreadAttributes, i as defineScriptVars, j as renderComponent, k as renderHead, l as renderSlot } from '../astro_D2Aa9jdi.mjs';
+import 'kleur/colors';
 import 'clsx';
-import * as mime from 'mrmime';
+/* empty css                           */
+import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS } from '../astro/assets-service_D_5fbzzE.mjs';
+import fs from 'fs';
+import path from 'path';
 
 const decoder = new TextDecoder();
 const toUTF8String = (input, start = 0, end = input.length) => decoder.decode(input.slice(start, end));
@@ -908,9 +912,9 @@ async function getImage$1(options, imageConfig) {
   };
 }
 
-const $$Astro$1 = createAstro("https://tinoviana.com.br");
+const $$Astro$a = createAstro("https://tinoviana.com.br");
 const $$Image = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Image;
   const props = Astro2.props;
   if (props.alt === void 0 || props.alt === null) {
@@ -930,9 +934,9 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(additionalAttributes)}${spreadAttributes(image.attributes)}>`;
 }, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/.pnpm/astro@4.7.0_typescript@5.4.5/node_modules/astro/components/Image.astro", void 0);
 
-const $$Astro = createAstro("https://tinoviana.com.br");
+const $$Astro$9 = createAstro("https://tinoviana.com.br");
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$Picture;
   const defaultFormats = ["webp"];
   const defaultFallbackFormat = "png";
@@ -980,89 +984,151 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 
-const fnv1a52 = (str) => {
-  const len = str.length;
-  let i = 0, t0 = 0, v0 = 8997, t1 = 0, v1 = 33826, t2 = 0, v2 = 40164, t3 = 0, v3 = 52210;
-  while (i < len) {
-    v0 ^= str.charCodeAt(i++);
-    t0 = v0 * 435;
-    t1 = v1 * 435;
-    t2 = v2 * 435;
-    t3 = v3 * 435;
-    t2 += v0 << 8;
-    t3 += v1 << 8;
-    t1 += t0 >>> 16;
-    v0 = t0 & 65535;
-    t2 += t1 >>> 16;
-    v1 = t1 & 65535;
-    v3 = t3 + (t2 >>> 16) & 65535;
-    v2 = t2 & 65535;
-  }
-  return (v3 & 15) * 281474976710656 + v2 * 4294967296 + v1 * 65536 + (v0 ^ v3 >> 4);
-};
-const etag = (payload, weak = false) => {
-  const prefix = weak ? 'W/"' : '"';
-  return prefix + fnv1a52(payload).toString(36) + payload.length.toString(36) + '"';
-};
+var __freeze$2 = Object.freeze;
+var __defProp$2 = Object.defineProperty;
+var __template$2 = (cooked, raw) => __freeze$2(__defProp$2(cooked, "raw", { value: __freeze$2(cooked.slice()) }));
+var _a$2;
+const $$Astro$8 = createAstro("https://tinoviana.com.br");
+const $$BaseHead = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  Astro2.self = $$BaseHead;
+  const { title, description, image = "/social_img.webp", ogType = "website" } = Astro2.props;
+  return renderTemplate(_a$2 || (_a$2 = __template$2(['<!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"', "><!-- Primary Meta Tags --><title>", '</title><meta name="title"', '><meta name="description"', '><!-- Open Graph / Facebook --><meta property="og:type"', '><meta property="og:url"', '><meta property="og:title"', '><meta property="og:description"', '><meta property="og:image"', '><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url"', '><meta property="twitter:title"', '><meta property="twitter:description"', '><meta property="twitter:image"', `><script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=GTM-W39KFG6M"><\/script><!-- <script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-async function loadRemoteImage(src, headers) {
-  try {
-    const res = await fetch(src, {
-      // Forward all headers from the original request
-      headers
-    });
-    if (!res.ok) {
-      return void 0;
-    }
-    return await res.arrayBuffer();
-  } catch (err) {
-    return void 0;
-  }
-}
-const GET = async ({ request }) => {
-  try {
-    const imageService = await getConfiguredImageService();
-    if (!("transform" in imageService)) {
-      throw new Error("Configured image service is not a local service");
-    }
-    const url = new URL(request.url);
-    const transform = await imageService.parseURL(url, imageConfig);
-    if (!transform?.src) {
-      throw new Error("Incorrect transform returned by `parseURL`");
-    }
-    let inputBuffer = void 0;
-    const isRemoteImage = isRemotePath(transform.src);
-    const sourceUrl = isRemoteImage ? new URL(transform.src) : new URL(transform.src, url.origin);
-    if (isRemoteImage && isRemoteAllowed(transform.src, imageConfig) === false) {
-      return new Response("Forbidden", { status: 403 });
-    }
-    inputBuffer = await loadRemoteImage(sourceUrl, isRemoteImage ? new Headers() : request.headers);
-    if (!inputBuffer) {
-      return new Response("Not Found", { status: 404 });
-    }
-    const { data, format } = await imageService.transform(
-      new Uint8Array(inputBuffer),
-      transform,
-      imageConfig
-    );
-    return new Response(data, {
-      status: 200,
-      headers: {
-        "Content-Type": mime.lookup(format) ?? `image/${format}`,
-        "Cache-Control": "public, max-age=31536000",
-        ETag: etag(data.toString()),
-        Date: (/* @__PURE__ */ new Date()).toUTCString()
-      }
-    });
-  } catch (err) {
-    console.error("Could not process image request:", err);
-    return new Response(`Server Error: ${err}`, { status: 500 });
-  }
-};
+  gtag('config', 'GTM-W39KFG6M');
+<\/script>
 
-const generic = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+<script>
+	partytown = {
+	  forward: ['dataLayer.push']
+	};
+  <\/script> -->`])), addAttribute(Astro2.generator, "content"), title, addAttribute(title, "content"), addAttribute(description, "content"), addAttribute(ogType, "content"), addAttribute(Astro2.url, "content"), addAttribute(title, "content"), addAttribute(description, "content"), addAttribute(new URL(image, Astro2.url), "content"), addAttribute(Astro2.url, "content"), addAttribute(title, "content"), addAttribute(description, "content"), addAttribute(new URL(image, Astro2.url), "content"));
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/components/BaseHead.astro", void 0);
+
+const $$Astro$7 = createAstro("https://tinoviana.com.br");
+const $$Header = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  Astro2.self = $$Header;
+  return renderTemplate`${maybeRenderHead()}<div class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm"> <div class="navbar"> <div class="navbar-start"> <label for="my-drawer" class="btn btn-square btn-ghost"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </label> </div> <div class="navbar-center flex-col"> <span><a class="btn btn-ghost normal-case text-xl relative top-1" href="/">Tino Viana</a></span> <span class="relative bottom-1">Consultoria & Produções</span> </div> <div class="navbar-end"></div> </div> </div>`;
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/components/Header.astro", void 0);
+
+const $$Astro$6 = createAstro("https://tinoviana.com.br");
+const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  Astro2.self = $$Footer;
+  const today = /* @__PURE__ */ new Date();
+  return renderTemplate`${maybeRenderHead()}<footer class="footer footer-center block mb-5 pt-10"> <div class="pb-2">
+&copy; ${today.getFullYear()} Tino Viana
+</div> <!-- <div class="inline opacity-75">
+    Desenvolvido por <a href="https://danielsemblano.com" target="_blank" class="font-bold">Daniel Semblano</a>
+  </div> --> </footer> `;
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/components/Footer.astro", void 0);
+
+const $$Astro$5 = createAstro("https://tinoviana.com.br");
+const $$SideBarFooter = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  Astro2.self = $$SideBarFooter;
+  return renderTemplate`${maybeRenderHead()}<div class="block sticky pointer-events-none bottom-10 bg-base-200 justify-center h-12 [mask-image:linear-gradient(transparent,#000000)]"></div> <div class="social-icons px-4 pb-5 pt-1 flex self-center justify-center sticky bottom-0 bg-base-200"> <a href="https://twitter.com/TinoCWB" target="_blank" class="mx-3" aria-label="Twitter" title="Twitter"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path> </svg> </a> <a href="https://www.linkedin.com/in/tino-viana-9a427b23/" target="_blank" class="mx-3" aria-label="Linkedin" title="Linkedin"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path> </svg> </a> <a href="/rss.xml" target="_blank" class="mx-3" aria-label="RSS Feed" title="RSS Feed"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"><path d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"></path><path d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"></path><circle cx="6" cy="18" r="2"></circle> </svg> </a> </div>`;
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/components/SideBarFooter.astro", void 0);
+
+var __freeze$1 = Object.freeze;
+var __defProp$1 = Object.defineProperty;
+var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(cooked.slice()) }));
+var _a$1;
+const $$Astro$4 = createAstro("https://tinoviana.com.br");
+const $$SideBarMenu = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
+  Astro2.self = $$SideBarMenu;
+  const { sideBarActiveItemID } = Astro2.props;
+  const activeClass = "bg-base-300";
+  return renderTemplate(_a$1 || (_a$1 = __template$1(["", '<ul class="menu grow shrink menu-md overflow-y-auto"> <li><a class="py-3 text-base" id="home" href="/">Home</a></li> <!-- <li><a class="py-3 text-base" id="projects" href="/projects">Projects</a></li> --> <li><a class="py-3 text-base" id="servicos" href="/servicos">Servi\xE7os</a></li> <!-- <li><a class="py-3 text-base" id="servicos2" href="/servicos2">Servi\xE7os2</a></li> --> <!-- <li><a class="py-3 text-base" id="services" href="/services">Services</a></li> --> <li><a class="py-3 text-base" id="livros" href="/livros">Livros</a></li> <!-- <li><a class="py-3 text-base" id="store" href="/store">Store</a></li> --> <li><a class="py-3 text-base" id="artigos" href="/artigos/">Artigos</a></li> <!-- <li><a class="py-3 text-base" id="cv" href="/cv">CV</a></li> --> <li><a class="py-3 text-base" id="galeria" href="/galeria">Fotos</a></li> <li><a class="py-3 text-base" id="contato" href="/contato">Contato</a></li> <!-- <li>\n        <a\n            class="py-3 text-base"\n            href="mailto:tinoviana@tinoviana.com.br"\n            target="_blank"\n            referrerpolicy="no-referrer-when-downgrade">Contato</a\n        >\n    </li> --> </ul> <script>(function(){', "\nconst activeItemElem = document.getElementById(sideBarActiveItemID);\nactiveItemElem && activeItemElem.classList.add(activeClass);\n})();<\/script>"])), maybeRenderHead(), defineScriptVars({ sideBarActiveItemID, activeClass }));
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/components/SideBarMenu.astro", void 0);
+
+const $$Astro$3 = createAstro("https://tinoviana.com.br");
+const $$SideBar = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
+  Astro2.self = $$SideBar;
+  const { sideBarActiveItemID } = Astro2.props;
+  return renderTemplate`${maybeRenderHead()}<div class="drawer-side z-40"> <label for="my-drawer" class="drawer-overlay"></label> <aside class="px-2 pt-2 h-auto min-h-full w-[19rem] bg-base-200 text-base-content flex flex-col"> <div class="w-fit mx-auto mt-5 mb-6"> <a href="/"> <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto rounded-full border-4 border-solid border-gold"> <div class="w-[15rem]"> <!-- <Image class="relative rounded-[15px] image-shine" format="webp" width={300} height={300} src="/profile.jpg" alt="Profile image" /> --> ${renderComponent($$result, "Image", $$Image, { "class": "mask mask-circle imgprofile", "loading": "eager", "format": "webp", "width": 300, "height": 300, "src": "/profile.jpg", "alt": "Foto Tino Viana" })} </div> </div> </a> </div> ${renderComponent($$result, "SideBarMenu", $$SideBarMenu, { "sideBarActiveItemID": sideBarActiveItemID })} ${renderComponent($$result, "SideBarFooter", $$SideBarFooter, {})} </aside> </div>`;
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/components/SideBar.astro", void 0);
+
+const $$Astro$2 = createAstro("https://tinoviana.com.br");
+const $$ViewTransitions = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  Astro2.self = $$ViewTransitions;
+  const { fallback = "animate" } = Astro2.props;
+  return renderTemplate`<meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback"${addAttribute(fallback, "content")}>`;
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/.pnpm/astro@4.7.0_typescript@5.4.5/node_modules/astro/components/ViewTransitions.astro", void 0);
+
+const SITE_TITLE = "Tino Viana | Consultoria, Produções & Artes Cênicas";
+const SITE_DESCRIPTION = "Metodologia construtivista para empresas. Palestras, coaching, mentoria, conversação inglês e francês, artes cênicas e muito mais!";
+
+const $$Astro$1 = createAstro("https://tinoviana.com.br");
+const $$BaseLayout = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$BaseLayout;
+  const {
+    image,
+    title = SITE_TITLE,
+    description = SITE_DESCRIPTION,
+    includeSidebar = true,
+    sideBarActiveItemID,
+    ogType
+  } = Astro2.props;
+  return renderTemplate`<html lang="en" data-theme="aqua"> <head>${renderComponent($$result, "BaseHead", $$BaseHead, { "title": title, "description": description, "image": image, ",": true, "ogType": ogType })}${renderTemplate`${renderComponent($$result, "ViewTransitions", $$ViewTransitions, {})}`}${renderHead()}</head> <body> <div class="bg-base-100 drawer lg:drawer-open"> <input id="my-drawer" type="checkbox" class="drawer-toggle"> <div class="drawer-content bg-base-100"> ${renderComponent($$result, "Header", $$Header, { "title": SITE_TITLE })} <div class="md:flex md:justify-center"> <main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]"> ${renderSlot($$result, $$slots["default"])} </main> </div> ${renderComponent($$result, "Footer", $$Footer, {})} </div> ${includeSidebar && renderTemplate`${renderComponent($$result, "SideBar", $$SideBar, { "sideBarActiveItemID": sideBarActiveItemID })}`} </div> </body></html>`;
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/layouts/BaseLayout.astro", void 0);
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$Astro = createAstro("https://tinoviana.com.br");
+const prerender = false;
+const $$Galeria = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Galeria;
+  const galleryDir = path.join(process.cwd(), "/src/assets/galeria");
+  const filenames = fs.readdirSync(galleryDir);
+  const imageFilenames = filenames.filter(
+    (filename) => filename.endsWith(".jpg") || filename.endsWith(".png") || filename.endsWith(".webp")
+  );
+  const photos = imageFilenames.map((filename) => ({
+    id: filename,
+    url: `/src/assets/galeria/${filename}`,
+    thumbnailUrl: `/src/assets/galeria/${filename}`,
+    title: filename
+  }));
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Galeria", "sideBarActiveItemID": "galeria" }, { "default": ($$result2) => renderTemplate(_a || (_a = __template([" ", `<h1 class="text-4xl py-3 w-full font-bold mb-5">Galeria de fotos</h1> <section class="prose prose-lg max-w-[750px] prose-img:mx-auto"> <!-- <script type="module">
+      import GLightbox from '/node_modules/glightbox/src/js/glightbox.js';
+      window.addEventListener('load', () => {
+        const lightbox = GLightbox({selector: 'a[data-gallery="gallery1"]'});
+      });
+    <\/script> --> <!-- <div class="gallery">
+      {photos.map((photo) => (
+        <a class="glightbox3" data-gallery="gallery1" href={photo.url}>
+          <img src={photo.thumbnailUrl} alt={photo.title} />
+        </a>
+      ))}
+    </div> --> <script type="module">
+      import GLightbox from "/node_modules/glightbox/src/js/glightbox.js";
+      window.addEventListener("load", () => {
+          const lightbox = GLightbox({ selector: 'a[data-gallery="gallery1"]' });
+      });
+  <\/script> <div class="gallery"> `, " </div> </section> "])), maybeRenderHead(), photos.map((photo) => renderTemplate`<a class="glightbox3" data-gallery="gallery1"${addAttribute(photo.url, "href")}> <img${addAttribute(photo.thumbnailUrl, "src")}${addAttribute(photo.title, "alt")}> </a>`)) })}`;
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/pages/galeria.astro", void 0);
+
+const $$file = "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/src/pages/galeria.astro";
+const $$url = "/galeria";
+
+const galeria = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
-  GET
+  default: $$Galeria,
+  file: $$file,
+  prerender,
+  url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Image as $, generic as g };
+export { $$BaseLayout as $, SITE_TITLE as S, $$Image as a, SITE_DESCRIPTION as b, galeria as c, getConfiguredImageService as g, imageConfig as i };
