@@ -1,8 +1,8 @@
 /* empty css                           */
 import { e as createAstro, f as createComponent, r as renderTemplate, j as renderComponent, m as maybeRenderHead, h as addAttribute, l as renderSlot } from '../astro_PI-Hi11_.mjs';
 import 'kleur/colors';
-import { g as getCollection, c as createSlug } from './__CnDcD-Sn.mjs';
-import { $ as $$Image, a as $$BaseLayout } from './404_CB7Yqar8.mjs';
+import { g as getCollection, c as createSlug } from './__HtmmfbCi.mjs';
+import { $ as $$Image, a as $$BaseLayout } from './404_Cjq6OMTm.mjs';
 import dayjs from 'dayjs';
 import localizedFormat from 'dayjs/plugin/localizedFormat.js';
 

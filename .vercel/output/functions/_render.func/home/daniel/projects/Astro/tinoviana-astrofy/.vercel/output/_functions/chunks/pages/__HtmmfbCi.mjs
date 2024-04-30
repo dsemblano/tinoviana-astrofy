@@ -1,7 +1,7 @@
 /* empty css                           */
 import { e as createAstro, f as createComponent, r as renderTemplate, m as maybeRenderHead, h as addAttribute, j as renderComponent, A as AstroError, n as UnknownContentCollectionError, o as renderUniqueStylesheet, p as renderScriptElement, q as createHeadAndContent, u as unescapeHTML, t as Fragment } from '../astro_PI-Hi11_.mjs';
 import 'kleur/colors';
-import { $ as $$Image, a as $$BaseLayout } from './404_CB7Yqar8.mjs';
+import { $ as $$Image, a as $$BaseLayout } from './404_Cjq6OMTm.mjs';
 import { p as prependForwardSlash } from '../astro/assets-service_CtoBNud7.mjs';
 
 const $$Astro$5 = createAstro("https://tinoviana.com.br");

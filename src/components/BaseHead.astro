@@ -39,7 +39,8 @@ const { title, description, image = '/social_img.webp', ogType = 'website' } = A
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
 <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=GTM-W39KFG6M"></script>
-<script type="text/partytown">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -51,4 +52,4 @@ const { title, description, image = '/social_img.webp', ogType = 'website' } = A
 	partytown = {
 	  forward: ['dataLayer.push']
 	};
-  </script>
+  </script> -->

@@ -1,8 +1,8 @@
 /* empty css                           */
 import { e as createAstro, f as createComponent, r as renderTemplate, j as renderComponent, m as maybeRenderHead, t as Fragment } from '../astro_PI-Hi11_.mjs';
 import 'kleur/colors';
-import { a as $$BaseLayout } from './404_CB7Yqar8.mjs';
-import { g as getCollection, $ as $$HorizontalCard, c as createSlug } from './__CnDcD-Sn.mjs';
+import { a as $$BaseLayout } from './404_Cjq6OMTm.mjs';
+import { g as getCollection, $ as $$HorizontalCard, c as createSlug } from './__HtmmfbCi.mjs';
 
 const $$Astro = createAstro("https://tinoviana.com.br");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
