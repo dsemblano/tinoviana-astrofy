@@ -1,0 +1,63 @@
+---
+import fs from "fs";
+import path from "path";
+import GLightbox from 'glightbox';
+
+// const lightbox = GLightbox({selector: 'a[data-gallery="gallery1"]'});
+
+
+// Define the directory path
+const galleryDir = path.join(process.cwd(), "/src/assets/galeria");
+
+// Read the directory and get all files
+const filenames = fs.readdirSync(galleryDir);
+
+// Filter out non-image files
+const imageFilenames = filenames.filter(
+  (filename) =>
+    filename.endsWith(".jpg") ||
+    filename.endsWith(".png") ||
+    filename.endsWith(".webp"),
+);
+
+// Create an array of photo objects
+const photos = imageFilenames.map((filename) => ({
+  id: filename,
+  url: `/src/assets/galeria/${filename}`,
+  thumbnailUrl: `/src/assets/galeria/${filename}`,
+  title: filename,
+}));
+
+//   const lightbox = GLightbox({
+//     touchNavigation: true,
+//     closeButton: true,
+//     loop: true,
+//     width: "85vw",
+//     height: "85vh",
+//     preload: true,
+//     openEffect: 'fade',
+//     closeEffect: 'fade',
+//     slideEffect: 'fade',
+//     dragAutoSnap: true,
+//     // cssEfects: {
+//     //   fade: { in: 'fadeIn', out: 'fadeOut' }
+//     // }
+//   });
+
+
+---
+
+    <script type="module">
+      import GLightbox from '/node_modules/glightbox/src/js/glightbox.js';
+      window.addEventListener('load', () => {
+        const lightbox = GLightbox({selector: 'a[data-gallery="gallery1"]'});
+      });
+    </script>
+
+<div class="gallery">
+    {photos.map((photo) => (
+      <a class="glightbox3" data-gallery="gallery1" href={photo.url}>
+        <img src={photo.thumbnailUrl} alt={photo.title} />
+      </a>
+    ))}
+  </div>

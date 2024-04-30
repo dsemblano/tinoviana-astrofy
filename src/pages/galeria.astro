@@ -1,11 +1,59 @@
 ---
-import Galeria from '../components/Galeria.astro';
+// import Galeria from "../components/Galeria.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import GLightbox from '../components/Glightbox.astro';
+
+// const lightbox = GLightbox({selector: 'a[data-gallery="gallery1"]'});
+
+  // const lightbox = GLightbox({
+  //   touchNavigation: true,
+  //   closeButton: true,
+  //   loop: true,
+  //   width: "85vw",
+  //   height: "85vh",
+  //   preload: true,
+  //   openEffect: 'fade',
+  //   closeEffect: 'fade',
+  //   slideEffect: 'fade',
+  //   dragAutoSnap: true,
+  //   // cssEfects: {
+  //   //   fade: { in: 'fadeIn', out: 'fadeOut' }
+  //   // }
+  // });
+
+// document.addEventListener('astro:page-load', initialize);
+// document.addEventListener('astro:after-swap', initialize);
+
 ---
-<BaseLayout title = "Galeria" sideBarActiveItemID="galeria">
+
+<BaseLayout title="Galeria" sideBarActiveItemID="galeria">
+
   <h1 class="text-4xl py-3 w-full font-bold mb-5">Galeria de fotos</h1>
 
   <section class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+
+    <!-- <script type="module">
+      import GLightbox from '/node_modules/glightbox/src/js/glightbox.js';
+      window.addEventListener('load', () => {
+        const lightbox = GLightbox({selector: 'a[data-gallery="gallery1"]'});
+      });
+    </script> -->
+
+
+    <!-- <div class="gallery">
+      {photos.map((photo) => (
+        <a class="glightbox3" data-gallery="gallery1" href={photo.url}>
+          <img src={photo.thumbnailUrl} alt={photo.title} />
+        </a>
+      ))}
+    </div> -->
+
+    <GLightbox :client-only />
+
+
+  </section>
+
+<!-- <section class="prose prose-lg max-w-[750px] prose-img:mx-auto">
       <h2 class="text-lg">Treinamento Indoor</h2>
 
       <ul class="lg:grid lg:grid-cols-3 lg:grid-flow-row">
@@ -188,4 +236,4 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     name="Artes Cênicas"
     />
 </ul>
-</section>
+</section> -->
