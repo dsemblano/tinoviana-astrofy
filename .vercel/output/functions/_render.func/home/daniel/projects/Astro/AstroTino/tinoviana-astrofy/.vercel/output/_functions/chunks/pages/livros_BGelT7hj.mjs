@@ -2,7 +2,7 @@
 import { e as createAstro, f as createComponent, r as renderTemplate, j as renderComponent, m as maybeRenderHead } from '../astro_D2Aa9jdi.mjs';
 import 'kleur/colors';
 import { $ as $$BaseLayout } from './404_BpV4MMcb.mjs';
-import { $ as $$HorizontalCard } from './index_DQIXL4U3.mjs';
+import { $ as $$HorizontalCard } from './index_dzyvNa3r.mjs';
 
 const $$Astro = createAstro("https://tinoviana.com.br");
 const $$Livros = createComponent(async ($$result, $$props, $$slots) => {
