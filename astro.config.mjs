@@ -4,12 +4,12 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 import partytown from "@astrojs/partytown";
 
-import vercel from "@astrojs/vercel/serverless";
+// import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://tinoviana.com.br',
-  integrations: [mdx(), sitemap(), tailwind(), partytown()],
-  output: "server",
-  adapter: vercel()
+  integrations: [mdx(), sitemap(), tailwind(), partytown()]
+  // output: "server",
+  // adapter: vercel()
 });
