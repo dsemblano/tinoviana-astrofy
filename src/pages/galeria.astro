@@ -4,6 +4,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import fs from "fs";
 import path from "path";
 
+export const prerender = true
+
 // const lightbox = GLightbox({selector: 'a[data-gallery="gallery1"]'});
 
   // const lightbox = GLightbox({
@@ -27,7 +29,7 @@ import path from "path";
 
 
 // Define the directory path
-const galleryDir = path.join(process.cwd(), "/public/galeria");
+const galleryDir = path.join(process.cwd(), "/src/assets/galeria");
 
 // Read the directory and get all files
 const filenames = fs.readdirSync(galleryDir);
@@ -43,8 +45,8 @@ const imageFilenames = filenames.filter(
 // Create an array of photo objects
 const photos = imageFilenames.map((filename) => ({
   id: filename,
-  url: `/public/galeria /${filename}`,
-  thumbnailUrl: `/public/galeria/${filename}`,
+  url: `/src/assets/galeria/${filename}`,
+  thumbnailUrl: `/src/assets/galeria/${filename}`,
   title: filename,
 }));
 
