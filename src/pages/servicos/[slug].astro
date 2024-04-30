@@ -4,6 +4,8 @@ import { ServicosSchema } from "../../content/config";
 import PostLayout from "../../layouts/PostLayout.astro";
 import createSlug from "../../lib/createSlug"
 
+export const prerender = true
+
 export async function getStaticPaths() {
   const postEntries = await getCollection("servicos");
   return postEntries.map((entry) => ({

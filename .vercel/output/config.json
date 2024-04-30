@@ -20,18 +20,6 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/artigos\\/tag\\/([^/]+?)(?:\\/(.*?))?\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/artigos\\/([^/]+?)\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/artigos(?:\\/(.*?))?\\/?$",
-			"dest": "_render"
-		},
-		{
 			"src": "^\\/contato\\/?$",
 			"dest": "_render"
 		},
@@ -53,22 +41,6 @@
 		},
 		{
 			"src": "^\\/services\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/servicos\\/([^/]+?)\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/servicos(?:\\/(.*?))?\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/store\\/([^/]+?)\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/store(?:\\/(.*?))?\\/?$",
 			"dest": "_render"
 		},
 		{
