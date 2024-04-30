@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
 import { S as SITE_TITLE, b as SITE_DESCRIPTION } from './404_BpV4MMcb.mjs';
-import { g as getCollection } from './index_DIovkQXR.mjs';
+import { g as getCollection } from './index_DQIXL4U3.mjs';
 
 async function get(context) {
   const blog = await getCollection("blog");
