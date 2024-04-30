@@ -19,7 +19,7 @@
     "@astrojs/sitemap": "^3.1.4",
     "@astrojs/tailwind": "^5.1.0",
     "animate.css": "^4.1.1",
-    "astro": "^4.7.0",
+    "astro": "=4.4.15",
     "daisyui": "^4.4.10",
     "dayjs": "^1.11.9",
     "glightbox": "^3.3.0",
