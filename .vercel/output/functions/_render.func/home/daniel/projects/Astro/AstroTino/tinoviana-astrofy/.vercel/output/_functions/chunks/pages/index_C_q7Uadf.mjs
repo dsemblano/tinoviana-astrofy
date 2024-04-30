@@ -1,7 +1,7 @@
 /* empty css                           */
 import { e as createAstro, f as createComponent, r as renderTemplate, m as maybeRenderHead, h as addAttribute, j as renderComponent, A as AstroError, n as UnknownContentCollectionError, o as renderUniqueStylesheet, p as renderScriptElement, q as createHeadAndContent, u as unescapeHTML, t as Fragment } from '../astro_D2Aa9jdi.mjs';
 import 'kleur/colors';
-import { a as $$Image, $ as $$BaseLayout } from './404_BpV4MMcb.mjs';
+import { a as $$Image, $ as $$BaseLayout } from './404_BI2fdlyN.mjs';
 import pLimit from 'p-limit';
 import { p as prependForwardSlash } from '../astro/assets-service_D_5fbzzE.mjs';
 
@@ -54,7 +54,7 @@ function createGetCollection({
       type === "content" ? contentCollectionToEntryMap[collection] : dataCollectionToEntryMap[collection]
     );
     let entries = [];
-    if (!Object.assign({"BASE_URL": "/", "MODE": "production", "DEV": false, "PROD": true, "SSR": true, "SITE": "https://tinoviana.com.br", "ASSETS_PREFIX": undefined}, { _: process.env._ })?.DEV && cacheEntriesByCollection.has(collection)) {
+    if (!Object.assign({"BASE_URL": "/", "MODE": "production", "DEV": false, "PROD": true, "SSR": true, "SITE": "https://tinoviana.com.br", "ASSETS_PREFIX": undefined}, {})?.DEV && cacheEntriesByCollection.has(collection)) {
       entries = [...cacheEntriesByCollection.get(collection)];
     } else {
       const limit = pLimit(10);
@@ -196,7 +196,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"artigos":{"type":"content","entries":{"a-liderança-nas-organizações-e-as-eleições-políticas":"/src/content/artigos/A liderança nas organizações e as eleições políticas.md","futebol-e-lideranca":"/src/content/artigos/Futebol e lideranca.md","inspiração-para-produzir":"/src/content/artigos/Inspiração para produzir.md","tem-que-vir-da-china":"/src/content/artigos/Tem que vir da China.md","assertividade":"/src/content/artigos/assertividade.md","sobre-liderança":"/src/content/artigos/Sobre liderança.md","comunicacao-significativa":"/src/content/artigos/comunicacao significativa.md","energizacao":"/src/content/artigos/energizacao.md","lideranca":"/src/content/artigos/lideranca.md","marca-empregadora":"/src/content/artigos/marca empregadora.md"}},"servicos":{"type":"content","entries":{"lideracao":"/src/content/servicos/lideracao.md"}},"store":{"type":"content","entries":{"item1":"/src/content/store/item1.md","item2":"/src/content/store/item2.md","item3":"/src/content/store/item3.md"}}};
+lookupMap = {"artigos":{"type":"content","entries":{"a-liderança-nas-organizações-e-as-eleições-políticas":"/src/content/artigos/A liderança nas organizações e as eleições políticas.md","futebol-e-lideranca":"/src/content/artigos/Futebol e lideranca.md","inspiração-para-produzir":"/src/content/artigos/Inspiração para produzir.md","sobre-liderança":"/src/content/artigos/Sobre liderança.md","tem-que-vir-da-china":"/src/content/artigos/Tem que vir da China.md","assertividade":"/src/content/artigos/assertividade.md","comunicacao-significativa":"/src/content/artigos/comunicacao significativa.md","energizacao":"/src/content/artigos/energizacao.md","lideranca":"/src/content/artigos/lideranca.md","marca-empregadora":"/src/content/artigos/marca empregadora.md"}},"servicos":{"type":"content","entries":{"lideracao":"/src/content/servicos/lideracao.md"}},"store":{"type":"content","entries":{"item1":"/src/content/store/item1.md","item2":"/src/content/store/item2.md","item3":"/src/content/store/item3.md"}}};
 
 function createGlobLookup(glob) {
 	return async (collection, lookupId) => {

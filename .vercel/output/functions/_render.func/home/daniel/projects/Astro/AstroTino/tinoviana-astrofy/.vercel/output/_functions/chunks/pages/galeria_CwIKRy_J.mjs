@@ -1,7 +1,7 @@
 /* empty css                           */
 import { e as createAstro, f as createComponent, r as renderTemplate, j as renderComponent, h as addAttribute, m as maybeRenderHead } from '../astro_D2Aa9jdi.mjs';
 import 'kleur/colors';
-import { $ as $$BaseLayout } from './404_BpV4MMcb.mjs';
+import { $ as $$BaseLayout } from './404_BI2fdlyN.mjs';
 import fs from 'fs';
 import path from 'path';
 

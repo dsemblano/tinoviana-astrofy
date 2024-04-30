@@ -930,7 +930,7 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
     additionalAttributes.srcset = image.srcSet.attribute;
   }
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(additionalAttributes)}${spreadAttributes(image.attributes)}>`;
-}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/astro/components/Image.astro", void 0);
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/.pnpm/astro@4.7.0/node_modules/astro/components/Image.astro", void 0);
 
 const $$Astro$9 = createAstro("https://tinoviana.com.br");
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
@@ -977,7 +977,7 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
     const srcsetAttribute = props.densities || !props.densities && !props.widths ? `${image.src}${image.srcSet.values.length > 0 ? ", " + image.srcSet.attribute : ""}` : image.srcSet.attribute;
     return renderTemplate`<source${addAttribute(srcsetAttribute, "srcset")}${addAttribute("image/" + image.options.format, "type")}${spreadAttributes(sourceAdditionalAttributes)}>`;
   })} <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}> </picture>`;
-}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/astro/components/Picture.astro", void 0);
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/.pnpm/astro@4.7.0/node_modules/astro/components/Picture.astro", void 0);
 
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
 					const getImage = async (options) => await getImage$1(options, imageConfig);
@@ -1059,7 +1059,7 @@ const $$ViewTransitions = createComponent(async ($$result, $$props, $$slots) => 
   Astro2.self = $$ViewTransitions;
   const { fallback = "animate" } = Astro2.props;
   return renderTemplate`<meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback"${addAttribute(fallback, "content")}>`;
-}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/astro/components/ViewTransitions.astro", void 0);
+}, "/home/daniel/projects/Astro/AstroTino/tinoviana-astrofy/node_modules/.pnpm/astro@4.7.0/node_modules/astro/components/ViewTransitions.astro", void 0);
 
 const SITE_TITLE = "Tino Viana | Consultoria, Produções & Artes Cênicas";
 const SITE_DESCRIPTION = "Metodologia construtivista para empresas. Palestras, coaching, mentoria, conversação inglês e francês, artes cênicas e muito mais!";

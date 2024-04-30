@@ -1,7 +1,7 @@
 /* empty css                           */
 import { e as createAstro, f as createComponent, r as renderTemplate, j as renderComponent, m as maybeRenderHead } from '../astro_D2Aa9jdi.mjs';
 import 'kleur/colors';
-import { $ as $$BaseLayout } from './404_BpV4MMcb.mjs';
+import { $ as $$BaseLayout } from './404_BI2fdlyN.mjs';
 
 const $$Astro = createAstro("https://tinoviana.com.br");
 const $$Contato = createComponent(async ($$result, $$props, $$slots) => {

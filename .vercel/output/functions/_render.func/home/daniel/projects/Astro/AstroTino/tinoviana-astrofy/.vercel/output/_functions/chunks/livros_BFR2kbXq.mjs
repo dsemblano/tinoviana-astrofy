@@ -1,5 +1,5 @@
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/livros_BGelT7hj.mjs');
+const page = () => import('./pages/livros_DaijEJQx.mjs');
 
 export { page };
